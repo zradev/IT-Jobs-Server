@@ -23,12 +23,12 @@ const UserSchema: Schema = new Schema(
         username: { type: String, required: true },
         email: { type: String, required: true },
         password: { type: String, required: true },
-        avatar_url: { type: String, required: true },
-        cv_url: { type: String, required: true },
-        job_title: { type: String, required: true },
-        education: { type: String, required: true },
-        country: { type: String, required: true },
-        city: { type: String, required: true }
+        avatar_url: { type: String, required: false },
+        cv_url: { type: String, required: false },
+        job_title: { type: String, required: false },
+        education: { type: String, required: false },
+        country: { type: String, required: false },
+        city: { type: String, required: false }
     },
     {
         versionKey: false
